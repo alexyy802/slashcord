@@ -14,7 +14,7 @@ It is recommended to put this in an `on_ready` event. Here is an example:
 ```python
 import discord
 from discord.ext import commands
-from discordpy_slash.slash import *
+from slashcord.slash import *
 
 intents = discord.Intents.default()
 
@@ -52,8 +52,6 @@ The `sync_all_commands` function takes these parameters:
 `choices`: A dictionary of choices for the commands given. All keys must be command names, and all values must be a list containing a dictionary with  `name` and `value` keys. An example is: `{"say" : [{"name" : "Greet", "value" : "Hi!"}]}`. This parameter is optional and defaults to `{}`.
 
 `error_function`: A function that will be called if an exception is raised. The function must have two parameters: `context`, and `error`. The `context` will be a `SlashContext` object, and the `error` will be the exception that is raised. This will override the default error system which means exceptions won't be raised unless you manually raise them with `raise error`. This parameter is optional and defaults to `None`. 
-
-`button_functions`: A list of functions the library can access when a button is pressed. Read more below. This parameter is optional and defaults to `[]`
 
 
 # Credits 
