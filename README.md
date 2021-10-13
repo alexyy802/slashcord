@@ -60,5 +60,6 @@ The `sync_all_commands` function takes these parameters:
 
 Thank you for https://github.com/TricolorHen061 without him i couldnt make the main file of the project :D
 
+Thank you for https://github.com/VincentRPS For Art and Styles :D
 
 # Buttons coming soon!
