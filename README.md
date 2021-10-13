@@ -20,20 +20,20 @@ intents = discord.Intents.default()
 
 intents.members = True
 
-bot = commands.Bot(command_prefix="!", intents=intents)
+client = commands.Bot(command_prefix="!", intents=intents)
 
 
 
-@bot.event
+@client.event
 async def on_ready():
-    await sync_all_commands(bot)
+    await sync_all_commands(client)
 
-@bot.command()
+@client.command()
 async def say(ctx, message):
     await ctx.send(message)
 
 
-bot.run()
+client.run(token)
 ```
 
 The `sync_all_commands` function takes these parameters:
